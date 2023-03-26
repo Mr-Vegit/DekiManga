@@ -1,0 +1,10 @@
+#chapter-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.chapter-img{
+    aspect-ratio: 7/9;
+    height: 10vh;
+}

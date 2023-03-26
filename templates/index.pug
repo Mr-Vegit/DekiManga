@@ -1,0 +1,30 @@
+extends template.pug
+
+block scripts
+block style 
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css")
+  style
+    include ../static/css/index.css
+    //- include ../static/css/media.css
+block content 
+  p#pagename.hide #{page}
+  section#recents-anime
+    div#recent-head
+      a(href="/") Latest Chapters 
+    div#recents-anime-container
+      template.recents-anime-template
+        div.recents-anime-cards
+          a.recents-anime-link(href="#")
+            img.recents-anime-img
+            p.recent-sub-or-dub
+          p.recents-anime-title
+  section#pages 
+    a#first-page(href="#") First page
+    div.pages-div
+      a.pages-a 
+      a.pages-a 
+      a.pages-a 
+      a.pages-a  
+      a.pages-a   
+    a#last-page(href="#") Last page        
+  script(src='../static/js/index.js' type='module')  

@@ -1,0 +1,12 @@
+extends template.pug
+
+block scripts
+block style 
+  link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css")
+  style
+    include ../static/css/chapterReader.css
+    //- include ../static/css/media.css
+block content 
+    p#chapter.hide #{chapterId}
+    div#chapter-img-container
+    script(src='../static/js/chapterReader.js' type='module') 
