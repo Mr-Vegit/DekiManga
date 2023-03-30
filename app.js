@@ -4,7 +4,7 @@ const app = express();
 const port = 80;
 const { META } = require("@consumet/extensions");
 const { PROVIDERS_LIST } = require("@consumet/extensions");
-const provider = 'mangareader'
+const provider = 'mangadex'
 const possibleProvider = PROVIDERS_LIST.MANGA.find(
         (p) => p.name.toLowerCase() === provider.toLocaleLowerCase()
       );
